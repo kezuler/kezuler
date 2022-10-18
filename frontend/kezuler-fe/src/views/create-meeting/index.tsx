@@ -120,6 +120,7 @@ function CreateMeeting() {
 
   return (
     <>
+      {/* <div className={'scrollable-wrapper'}> */}
       <TextAppBar
         onClick={
           location.pathname === PathName.createInfo
@@ -135,6 +136,7 @@ function CreateMeeting() {
       <div className={classNames('create-meeting-page', backgroundSetter())}>
         <Outlet />
       </div>
+      {/* </div> */}
     </>
   );
 }
